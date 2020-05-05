@@ -1,0 +1,246 @@
+body{
+    margin: 0px;
+    line-height: 1;
+}
+.container{
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+}
+.row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+#gradient{
+     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    padding: 40px 0px 40px 0px;
+}
+
+form{
+    margin:10px 0px 10px 30%;
+}
+
+form h1{
+    font-size: 40px;
+text-shadow: 1px 2px 3px #666;
+    margin: 5px 0px 5px 0px;
+    line-height: 1.5;
+}
+form h2{
+    margin: 5px 0px 5px 0px;
+}
+form input{
+    border-radius: 7px;
+    padding: 5px;
+    width: 400px;
+    }
+form .form{
+    margin-top: 30px;
+}
+form button{
+    margin-top: 10px;
+    border-radius: 7px;
+    font-weight: 600;
+    background-color: white;
+    font-size: 20px;
+    }
+#gradient iframe{
+    margin-left: 15%;
+}
+/*font-container*/
+.font-container{
+    width: 100%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.font-container h1{
+    text-align: center;
+    font-size: 55px;
+    padding-top: 5px;
+    margin-bottom: 100px;
+}
+.font-container-boxes{
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+    
+}
+.font-container-boxes h2{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.font-container-boxes p{
+    font-size: 32px;
+    margin-top: 20px;
+}
+.font-container-button {
+    display: block;
+    margin: auto;
+    font-size: 32px;
+    color: white;
+    font-weight: 700;
+    background-color: red;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 50px 15px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
+    
+    }
+.font-container-button:hover{
+    background-color: darkorange;
+     transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+.col-7-text{
+    padding: 20px;
+    font-size: 32px;
+    margin-top: 64px;
+}
+.col-5-img{
+    margin-left: 30px;
+    box-shadow: 7px 7px 30px 2px black;
+   margin-top: 74px;
+}
+.thankyou{
+    margin-top: 8rem;
+    color: red;
+    text-shadow: 2px 2px 15px black;
+}
+
+
+
+
+/*####     nav bar      ########*/
+nav{
+    width: 100%;
+    margin: 0px;
+    }
+ nav ul.navbar{
+     background-color: black;
+     overflow: hidden;
+     margin: 0px;
+     padding-left: 0px;
+    }
+nav ul.navbar li{
+    list-style: none;
+    float: left;
+    }
+nav ul.navbar li a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    }
+nav ul.navbar li a:hover{
+    color: red;
+    background-color: orange;
+}
+nav ul.navbar li.rightnav{
+    float: right;
+}
+ul li.dropdownicon{
+    display: none;
+}
+/*###mobile phone#####*/
+@media screen and (max-width: 680px)
+{
+    ul.navbar li:not(:nth-child(1)){
+        display: none;
+    }
+   ul.navbar li.dropdownicon {
+        display: block;
+       float: right;
+    }
+    ul.navbar.responsive li.dropdownicon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  ul.navbar.responsive {
+    position: relative;
+  }
+  
+  ul.navbar.responsive li {
+    display: inline;
+    float: none;
+  }
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+    ul.navbar.responsive li.rightnav{
+        float: none;
+    }
+    .col-6{
+        width: 100%;
+        margin: 0;
+    }
+    form{
+        margin: 0px 0px 30px 10px;
+    }
+    #gradient iframe{
+        margin-left: 0;
+        width: 90%;
+        display: block;
+        margin: auto;
+   
+    }
+      
+    .col-4,
+    .col-5,
+    .col-7{
+        width: 100%;
+    }
+    .img{
+        padding: 10px;
+    }
+    .col-5-img{
+        width: 100%;
+          margin: 0; 
+
+    }
+}
+    
+    
+    
+
+
+
+
+
+
+
+
+
